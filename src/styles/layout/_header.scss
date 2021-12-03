@@ -1,0 +1,27 @@
+@use "../abstracts/variables";
+
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: variables.$headerBackground;
+    
+    &__list {
+        display: flex;
+        list-style: none;
+    }
+
+    &__item {
+        font-size: 1.1rem;
+        padding: 1.5rem 3rem;
+        text-transform: uppercase;
+
+        & > :hover {
+            color: white;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: variables.$headerText;
+}

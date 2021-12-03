@@ -1,2 +1,8 @@
-@use "global";
-@use "wallpaper";
+//abstracts
+//@use "abstracts/variables";
+
+//layout
+@use "layout/general";
+@use "layout/header";
+@use "layout/section-one";
+@use "layout/section-two";
