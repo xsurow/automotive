@@ -6,63 +6,35 @@ let imgs = document.querySelectorAll('.section-three__carousel > img');
 let prevBtn = document.querySelector('.prevBtn');
 let nextBtn = document.querySelector('.nextBtn');
 
-let count = 2;
-let start = 1;
-let end = imgs.length - 2;
-let imgsArray = [...imgs];
+let count = 6;
+const width = 100;
 
-const width = imgs[0].clientWidth;
-
-carousel.style.transform = 'translateX(' + (-width * 2) + 'px)';
+carousel.style.transform = 'translateX(' + (-width * 6) + '%)';
 
 //left button listener
 prevBtn.addEventListener('click', () => {
-    addNewImgPrev();
-    //carousel.style.transform = 'translateX(' + (-width * count) + 'px)';
+    if (count <= 1) return;
+    carousel.style.transition = 'transform 0.5s linear';
+    count--;
+    carousel.style.transform = 'translateX(' + (-width * count) + '%)';
 });
 
 //right button listeer
 nextBtn.addEventListener('click', () => {
+    if (count >= imgs.length - 2) return;
+    carousel.style.transition = 'transform 0.5s linear';
     count++;
-    addNewImgNext();
-    carousel.style.transform = 'translateX(' + (-width * count) + 'px)';
+    carousel.style.transform = 'translateX(' + (-width * count) + '%)';
 });
 
-//problem zdjecie wstawia sie do lewej krawędzi strony czyli left:0, zmienić na left: -100%;
-function addNewImgPrev() {
-    let newImg = document.createElement('img');
-    newImg.style.position = 'relative';
-    newImg.setAttribute('src', './images/carouselpic' + end + '.jpg');
-    carousel.prepend(newImg);
-    if (end == 1) {
-        end = imgs.length - 1;
-    } else {
-        end--;
+carousel.addEventListener('transitionend', () => {
+    if (imgs[count].id === "first") {
+        carousel.style.transition = 'none';
+        count = 6;
+        carousel.style.transform = 'translateX(' + (-width * count) + '%)';
+    } else if (imgs[count].id === "last") {
+        carousel.style.transition = 'none';
+        count = 6;
+        carousel.style.transform = 'translateX(' + (-width * count) + '%)';
     }
-    // if (imgsArray.length - 1 > imgsLength) {
-    //     carousel[imgsArray.length-1].remove();
-    // }
-    console.log(imgsArray)
-}
-
-function addNewImgNext() {
-    if (count + 2 > imgsArray.length) {
-        let newImg = document.createElement('img');
-        newImg.setAttribute('src', './images/carouselpic' + start + '.jpg');
-        carousel.append(newImg);
-        imgsArray.push(newImg);
-        if (start == imgs.length - 1) {
-            start = 1;
-        } else {
-            start++;
-        }
-        // if (imgsArray.length - 1 > imgsLength) {
-        //     carousel[0].remove();
-        // }
-        console.log(imgsArray)
-    }
-}
-
-
-
-
+});
