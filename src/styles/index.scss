@@ -1,5 +1,6 @@
 //abstracts
-//@use "abstracts/variables";
+// @use "abstracts/variables";
+// @use "abstracts/animations";
 
 //layout
 @use "layout/general";
@@ -7,3 +8,5 @@
 @use "layout/section-one";
 @use "layout/section-two";
 @use "layout/section-three";
+@use "layout/section-four";
+@use "layout/section-five";

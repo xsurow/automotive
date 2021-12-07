@@ -1,0 +1,99 @@
+@use "../abstracts/variables";
+
+.section-four {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    h2 {
+        font-size: 12vw;
+        color: variables.$titleColor;
+        text-transform: uppercase;
+        margin-top: 20vh;
+        z-index: -1;
+        padding: 0.5rem;
+    }
+
+    & > span:nth-of-type(1) {
+        position: absolute;
+        font-size: 50vw;
+        color: variables.$backgroundTextColor;
+        overflow: hidden;
+        font-weight: 700;
+        z-index: -2;
+        top: 2vh;
+    }
+
+    & > span:nth-of-type(2) {
+        position: absolute;
+        font-size: 50vw;
+        color: variables.$backgroundTextColor;
+        overflow: hidden;
+        font-weight: 700;
+        z-index: -2;
+        top: 120vh;
+        left: -60vw;
+    }
+
+    &__container1 {
+        margin-top: 20vh;
+        width: 100%;
+        display: flex;
+    }
+
+    &__container2 {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__text1  {
+        align-self: center;
+        white-space: pre-line;
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 2vw;
+            color: variables.$textColor;
+        } 
+
+        p {
+            color: variables.$textColor;
+        }
+    }
+
+    &__text2 {
+        align-self: center;
+        white-space: pre-line;
+        margin-right: 5vw;
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 2vw;
+            color: variables.$textColor;
+        } 
+
+        p {
+            color: variables.$textColor;
+        }
+    }
+
+    &__image1 {
+        background: url('../images/engine1.jpg');
+        background-position: center;
+        background-size: cover;
+        width: 60%;
+        height: 75vh;
+        clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+    }
+
+    &__image2 {
+        background: url('../images/engine2.jpg');
+        background-position: center;
+        background-size: cover;
+        
+        width: 50%;
+        height: 70vh;
+        clip-path: polygon(15% 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+}
