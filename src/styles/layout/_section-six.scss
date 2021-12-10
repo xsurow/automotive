@@ -1,0 +1,195 @@
+@use "../abstracts/variables";
+
+.section-six {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    h2 {
+        font-size: 11vw;
+        color: variables.$titleColor;
+        text-transform: uppercase;
+        margin-top: 20vh;
+        z-index: -1;
+        padding: 0.5rem;
+        margin-left: 0;
+    }
+
+    .sentence {
+        font-size: 2vw;
+        margin-left: 40vw;
+        color: variables.$textColor;
+    }
+
+    & > span:nth-of-type(1) {
+        position: absolute;
+        font-size: 50vw;
+        color: variables.$backgroundTextColor;
+        font-weight: 700;
+        z-index: -2;
+        top: 2vh;
+    }
+
+    & > span:nth-of-type(2) {
+        position: absolute;
+        font-size: 50vw;
+        color: variables.$backgroundTextColor;
+        
+        font-weight: 700;
+        z-index: -2;
+        top: 100vh;
+        left: -60vw;
+    }
+
+    &__container {
+        width: 100%;
+        height: 90vh;
+        display: grid;
+        grid-template-columns: repeat(4, 22%);
+        column-gap: 2%;
+        margin: 10vh 0 0 3%;
+    }
+
+    &__element {
+        width: 100%;
+        height: 30vw;
+        text-align: center;
+
+        &--color1 {
+            border: 1px solid rgb(85, 255, 51, 1);
+            background-color: rgba(49, 49, 49, 0.15);
+        }
+
+        &--color2 {
+            border: 1px solid rgb(255, 19, 19, 1);
+            background-color: rgba(49, 49, 49, 0.15);
+        }
+
+        &--color3 {
+            border: 1px solid rgb(0, 255, 255, 1);
+            background-color: rgba(49, 49, 49, 0.15);
+        }
+
+        &--color4 {
+            border: 1px solid rgb(58, 58, 58, 1);
+            background-color: rgba(49, 49, 49, 0.15);
+        }
+
+        & > p {
+            font-size: 3vw;
+            color: rgb(0, 0, 0);
+            font-weight: 100;
+            letter-spacing: 0.5rem;
+            padding: 2vw 0;
+        }
+    }
+
+    &__image1 {
+        background: url('../images/color.jpg');
+        background-size: cover;
+        background-position:center;
+        width: 100%;
+        height: 20vw; 
+        position: relative;
+
+        & > a {
+            position: absolute;
+            left: 5%;
+            bottom: 5%;
+            border: 1px solid white;
+            background: transparent;
+            padding: 4% 8%;
+            margin: 0;
+            font-size: 1vw;
+            color: white;
+            background-color:rgb(255, 255, 255, 0.3);
+
+            &:hover {
+                border: 1px solid rgb(85, 255, 51, 1);
+                color: rgb(85, 255, 51, 1);
+            }
+        }   
+    }
+
+    &__image2 {
+        background: url('../images/interior.jpg');
+        background-size: cover;
+        background-position:center;
+        width: 100%;
+        height: 20vw;
+        position: relative;
+
+        & > a {
+            position: absolute;
+            left: 5%;
+            bottom: 5%;
+            border: 1px solid white;
+            background: transparent;
+            padding: 4% 8%;
+            margin: 0;
+            font-size: 1vw;
+            color: white;
+            background-color:rgb(255, 255, 255, 0.3);
+
+            &:hover {
+                border: 1px solid rgb(255, 19, 19, 1);
+                color: rgb(255, 19, 19, 1);
+            }
+        }  
+    }
+
+    &__image3 {
+        background: url('../images/systems.jpg');
+        background-size: cover;
+        background-position:center;
+        width: 100%;
+        height: 20vw;
+        position: relative;
+
+        & > a {
+            position: absolute;
+            left: 5%;
+            bottom: 5%;
+            border: 1px solid white;
+            background: transparent;
+            padding: 4% 8%;
+            margin: 0;
+            font-size: 1vw;
+            color: white;
+            background-color:rgb(255, 255, 255, 0.3);
+
+            &:hover {
+                border: 1px solid rgb(0, 255, 255, 1);
+                color: rgb(0, 255, 255, 1);
+            }
+        }  
+    }
+
+    &__image4 {
+        background: url('../images/rim.jpg');
+        background-size: cover;
+        background-position:center;
+        width: 100%;
+        height: 20vw;
+        position: relative;
+
+        & > a {
+            position: absolute;
+            left: 5%;
+            bottom: 5%;
+            border: 1px solid white;
+            background: transparent;
+            padding: 4% 8%;
+            margin: 0;
+            font-size: 1vw;
+            color: white;
+            background-color:rgb(255, 255, 255, 0.3);
+
+            &:hover {
+                border: 1px solid rgb(58, 58, 58, 1);
+                color: rgb(58, 58, 58, 1);
+            }
+        }  
+    }
+}
+
