@@ -1,3 +1,5 @@
+@use '../abstracts/variables';
+
 .section-two {
     display: block;
     background: url('../images/pic2.jpg');
@@ -5,4 +7,36 @@
     background-size: cover;
     width: 100%;
     height: 100vh;
+    position: relative;
+
+    &__h1{
+        text-transform: uppercase;
+        font-size: 4vw;
+        padding-left: 2vw;
+        color: rgba(255, 255, 255);
+    }
+
+    &__p1 {
+        padding-left: 3vw;
+        font-size: 1vw;
+        color: rgb(124, 124, 124);
+        
+    }
+
+    &__area {
+        position: absolute;
+        top: 60vh;
+        left: 50vw;
+        max-width: 50vw;
+    }
+
+    &__h2 {
+        text-transform: uppercase;
+        font-size: 3vw;
+        color: rgb(163, 163, 163);
+    }
+
+    &__p2 {
+        color: white
+    }
 }

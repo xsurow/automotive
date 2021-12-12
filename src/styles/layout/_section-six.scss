@@ -103,6 +103,7 @@
             font-size: 1vw;
             color: white;
             background-color:rgb(255, 255, 255, 0.3);
+            text-decoration: none;
 
             &:hover {
                 border: 1px solid rgb(85, 255, 51, 1);
@@ -130,10 +131,11 @@
             font-size: 1vw;
             color: white;
             background-color:rgb(255, 255, 255, 0.3);
+            text-decoration: none;
 
             &:hover {
-                border: 1px solid rgb(255, 19, 19, 1);
-                color: rgb(255, 19, 19, 1);
+                border: 1px solid rgb(255, 0, 0);
+                color: rgb(255, 0, 0);
             }
         }  
     }
@@ -157,6 +159,7 @@
             font-size: 1vw;
             color: white;
             background-color:rgb(255, 255, 255, 0.3);
+            text-decoration: none;
 
             &:hover {
                 border: 1px solid rgb(0, 255, 255, 1);
@@ -184,6 +187,7 @@
             font-size: 1vw;
             color: white;
             background-color:rgb(255, 255, 255, 0.3);
+            text-decoration: none;
 
             &:hover {
                 border: 1px solid rgb(58, 58, 58, 1);

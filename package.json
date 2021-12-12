@@ -3,7 +3,6 @@
   "private": true,
   "scripts": {
     "start": "webpack serve",
-    "watch": "webpack --watch",
     "build": "set NODE_ENV=production&& webpack",
     "build-dev": "webpack",
     "clean": "rimraf dist"
@@ -21,6 +20,7 @@
   "homepage": "https://github.com/xsurow/automotive#readme",
   "devDependencies": {
     "css-loader": "^6.5.1",
+    "html-loader": "^3.0.1",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.4.5",
     "sass": "^1.44.0",
@@ -28,5 +28,8 @@
     "webpack": "^5.64.4",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.6.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4"
   }
 }

@@ -1,3 +1,5 @@
+@use '../abstracts/variables';
+
 *, :after, :before {
     box-sizing: border-box;
     padding: 0;
@@ -23,13 +25,14 @@ header {
 
 main {
     top: 0;
-    position: absolute;
     width: 100%;
     display: block;
 }
 
 footer {
-    height: 40vh;
+    height: 30vh;
     width: 100%;
-    background-color:rgb(19, 19, 19);
+    background-color: variables.$footerBackground;
+    display: flex;
+    align-items: center;
 }
