@@ -7,13 +7,19 @@
     overflow: hidden;
 
     h2 {
-        font-size: 12vw;
+        font-size: 6vw;
         color: variables.$titleColor;
         text-transform: uppercase;
         margin-top: 20vh;
         z-index: -1;
         padding: 0.5rem;
-        margin-left: 40vw;
+        margin-left: 50vw;
+    }
+
+    &__sentence {
+        font-size: 2vw;
+        margin-left: 55vw;
+        color: variables.$textColor;
     }
 
     & > span:nth-of-type(1) {
@@ -138,6 +144,12 @@
         max-width: 30vw;
         top: 50%;
         transform: translateY(-50%);
+
+        h1 {
+            text-transform: uppercase;
+            padding: 0 0 0.1rem 0;
+            color: variables.$textColor;
+        } 
     }
 
     &__element2 {
@@ -174,8 +186,15 @@
     &__text2 {
         position: absolute;
         max-width: 30vw;
-        margin-left: 5vw;
+        margin-left: 10vw;
         top: 50%;
         transform: translateY(-50%);
+
+        h1 {
+            padding: 0 0 0.1rem 0;
+            text-transform: uppercase;
+            font-size: 1.5vw;
+            color: variables.$textColor;
+        } 
     }
 }

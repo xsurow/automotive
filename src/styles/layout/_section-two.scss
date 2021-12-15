@@ -8,35 +8,61 @@
     width: 100%;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 
     &__h1{
+        position: relative;
+        left: -100vw;
         text-transform: uppercase;
         font-size: 4vw;
         padding-left: 2vw;
         color: rgba(255, 255, 255);
+
+        &--active {
+            transform: translateX(103vw);
+            transition: transform 1.5s ease-in;
+        }
+
+        &--moving{
+            transform: translateX(108vw);
+            transition: transform 20s linear;
+        }
     }
 
     &__p1 {
-        padding-left: 3vw;
+        position: relative;
+        left: 5vw;
         font-size: 1vw;
-        color: rgb(124, 124, 124);
-        
+        color: rgb(153, 153, 153);
+        opacity: 0;
+        transition: opacity 3s ease-in-out;
     }
 
     &__area {
         position: absolute;
         top: 60vh;
-        left: 50vw;
-        max-width: 50vw;
+        left: 100vw;
+        width: 50vw;
+
+        &--active{
+            transform: translateX(-50vw);
+            transition: transform 1s ease-in;
+        }
+
+        &--moving{
+            transform: translateX(-60vw);
+            transition: transform 20s linear;
+        }
     }
 
     &__h2 {
         text-transform: uppercase;
-        font-size: 3vw;
-        color: rgb(163, 163, 163);
+        font-size: 2vw;
+        color: rgb(255, 255, 255);
     }
 
     &__p2 {
-        color: white
+        color: rgb(99, 99, 99);
+        padding-left: 1rem;
     }
 }
