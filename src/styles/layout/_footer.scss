@@ -10,15 +10,16 @@
     &__container {
         display: flex;
         color: variables.$footerText;
-        padding-right: 5vw;
+        padding: 0 2vw;
     
         & > p {
-            padding: 0 1rem;
-    
-            &:hover {
-                color: rgb(163, 163, 163);
-                cursor: pointer;
-            }
+            padding: 0 1rem; 
+        }
+
+
+        p:hover {
+            color: rgb(163, 163, 163);
+            cursor: pointer;
         }
     }
 }
@@ -26,14 +27,14 @@
 .socials {
     width: 30%;
     height: 20vh;
-    padding-left: 5vw;
     border-left: 1px solid rgba(143, 143, 143, 0.7);
+    padding-left: 5vw;
     display: flex;
     align-items: center;
 
     .fa-facebook-square, .fa-youtube, .fa-instagram, .fa-github {
-        width: 2.5vw;
-        height: 2.5vw;
+        width: 2.2rem;
+        height: 2.2rem;
         color: variables.$footerText;
         margin: 0 1vw;
 
