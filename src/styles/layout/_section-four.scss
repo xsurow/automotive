@@ -12,7 +12,6 @@
         margin-top: 10vh;
         z-index: -1;
         text-align: center;
-        padding: 2rem;
     }
 
     & > span:nth-of-type(1) {
@@ -22,7 +21,7 @@
         overflow: hidden;
         font-weight: 700;
         z-index: -2;
-        top: -10vh;
+        top: -15vh;
     }
 
     & > span:nth-of-type(2) {
@@ -50,9 +49,9 @@
 
     &__text1  {
         align-self: center;
+        width: 41vw;
         margin: auto;
-        max-width: 35vw;
-
+    
         h1 {
             text-transform: uppercase;
             color: variables.$textColor;
@@ -61,13 +60,14 @@
 
         p {
             color: variables.$textColor;
+            max-width: 85%;
         }
     }
 
     &__text2 {
         align-self: center;
         margin: auto;
-        max-width: 30vw;
+        width: 40vw;
 
         h1 {
             text-transform: uppercase;
@@ -86,7 +86,7 @@
         background: url('../images/engine1.jpg');
         background-position: center;
         background-size: cover;
-        width: 55%;
+        min-width: 55%;
         height: 35vw;
         clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
     }
@@ -95,7 +95,6 @@
         background: url('../images/engine2.jpg');
         background-position: center;
         background-size: cover;
-        
         width: 50%;
         height: 35vw;
         clip-path: polygon(15% 0, 100% 0%, 100% 100%, 0% 100%);

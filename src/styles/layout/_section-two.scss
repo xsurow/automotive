@@ -14,7 +14,7 @@
         position: relative;
         left: -100vw;
         text-transform: uppercase;
-        font-size: 4vw;
+        font-size: 4rem;
         padding-left: 2vw;
         color: rgba(255, 255, 255);
 
@@ -31,8 +31,8 @@
 
     &__p1 {
         position: relative;
-        left: 5vw;
-        font-size: 1vw;
+        left: 10vw;
+        font-size: 1rem;
         color: rgb(153, 153, 153);
         opacity: 0;
         transition: opacity 3s ease-in-out;
@@ -48,16 +48,11 @@
             transform: translateX(-50vw);
             transition: transform 1s ease-in;
         }
-
-        &--moving{
-            transform: translateX(-60vw);
-            transition: transform 20s linear;
-        }
     }
 
     &__h2 {
         text-transform: uppercase;
-        font-size: 2vw;
+        font-size: 2rem;
         color: rgb(255, 255, 255);
     }
 
@@ -65,4 +60,9 @@
         color: rgb(99, 99, 99);
         padding-left: 1rem;
     }
+}
+
+#overview {
+    position: absolute;
+    top: -10vh;
 }

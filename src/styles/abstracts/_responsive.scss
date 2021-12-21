@@ -4,6 +4,34 @@
         background-color: blue;
     }
 
+    .section-two {
+        &__h1 {
+            font-size: calc(3rem + 1vw);
+
+            &--active {
+                transform: translateX(101vw);
+            }
+    
+            &--moving{
+                transform: translateX(105vw);
+            }
+        }
+    }
+
+    .section-four {
+        &__text1 {
+            h1 {
+                font-size: calc(1rem + 0.5vw);
+            }
+        }
+
+        &__text2 {
+            h1 {
+                font-size: calc(1rem + 0.5vw);
+            }
+        }
+    }
+
     .section-six {
         display: flex;
         flex-direction: column;

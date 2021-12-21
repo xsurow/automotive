@@ -16,9 +16,6 @@ export function sectionTwo() {
         }
         if (scrolled > 600 && scrolled < 1200) {
             area.classList.add('section-two__area--active');
-            setTimeout(() => {
-                area.classList.add('section-two__h1--moving');
-            }, 1000)
         }
     })
 }

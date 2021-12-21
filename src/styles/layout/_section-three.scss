@@ -3,6 +3,7 @@
 .section-three {
     width: 100%;
     overflow: hidden;
+    scroll-behavior: smooth;
 
     &__container {
         position: relative;
