@@ -16,7 +16,7 @@
         text-transform: uppercase;
         font-size: 4rem;
         padding-left: 2vw;
-        color: rgba(255, 255, 255);
+        color: variables.$htextColor;
 
         &--active {
             transform: translateX(103vw);
@@ -33,7 +33,7 @@
         position: relative;
         left: 10vw;
         font-size: 1rem;
-        color: rgb(153, 153, 153);
+        color: variables.$p1textColor;
         opacity: 0;
         transition: opacity 3s ease-in-out;
     }
@@ -53,11 +53,11 @@
     &__h2 {
         text-transform: uppercase;
         font-size: 2rem;
-        color: rgb(255, 255, 255);
+        color: variables.$htextColor;
     }
 
     &__p2 {
-        color: rgb(99, 99, 99);
+        color: variables.$p2textColor;
         padding-left: 1rem;
     }
 }
