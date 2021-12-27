@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     background-color: variables.$headerBackground;
+    height: 3.5rem;
     
     &__list {
         display: flex;
@@ -47,8 +48,8 @@
 
 .hamburger {
     position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
+    top: 1rem;
+    right: 1rem;
     width: 26px;
     height: 18px;
     display: none;
@@ -101,6 +102,18 @@
             transform: translate(0px, -7px) rotate(-45deg);
         }
     }
+}
+
+.triangle {
+    background-color: variables.$hamburger;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90px;
+    height: 80px;
+    z-index: -1;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+    visibility: hidden;
 }
 
 

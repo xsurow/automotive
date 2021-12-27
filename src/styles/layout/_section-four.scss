@@ -47,7 +47,7 @@
         justify-content: flex-end;
     }
 
-    &__text1  {
+    &__text1 {
         align-self: center;
         width: 41vw;
         margin: auto;
@@ -60,7 +60,7 @@
 
         p {
             color: variables.$textColor;
-            max-width: 85%;
+            max-width: 100%;
         }
     }
 

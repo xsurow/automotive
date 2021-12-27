@@ -15,17 +15,17 @@
         left: -100vw;
         text-transform: uppercase;
         font-size: 4rem;
-        padding-left: 2vw;
+        padding-left: auto;
         color: variables.$htextColor;
 
         &--active {
-            transform: translateX(103vw);
+            transform: translateX(105vw);
             transition: transform 1.5s ease-in;
         }
 
         &--moving{
+            transition: transform 10s linear;
             transform: translateX(108vw);
-            transition: transform 20s linear;
         }
     }
 
@@ -33,7 +33,7 @@
         position: relative;
         left: 10vw;
         font-size: 1rem;
-        color: variables.$p1textColor;
+        color: variables.$ptextColor;
         opacity: 0;
         transition: opacity 3s ease-in-out;
     }
@@ -57,7 +57,7 @@
     }
 
     &__p2 {
-        color: variables.$p2textColor;
+        color: variables.$ptextColor;
         padding-left: 1rem;
     }
 }

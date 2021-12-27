@@ -1,4 +1,3 @@
-
 export function sectionTwo() {
     const h1 = document.querySelector('.section-two__h1');
     const p1 = document.querySelector('.section-two__p1');
@@ -7,7 +6,7 @@ export function sectionTwo() {
     window.addEventListener('scroll', () => {
         const scrolled = window.scrollY;
         console.log(scrolled)
-        if (scrolled > 200 && scrolled < 800) {
+        if (scrolled > 200) {
             h1.classList.add('section-two__h1--active');
             p1.style.opacity = '1';
             setTimeout(() => {
