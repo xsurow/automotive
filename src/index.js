@@ -8,10 +8,5 @@ document.addEventListener('DOMContentLoaded', () => {
     navbar();
     sectionOneText();
     sectionTwo();
-
-    //slider();
+    slider();
 });
-
-
-
-

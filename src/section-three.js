@@ -5,6 +5,9 @@ export function slider() {
     let prevBtn = document.querySelector('.prevBtn');
     let nextBtn = document.querySelector('.nextBtn');
 
+    let btnsCounter = 1;
+    document.querySelector('#radio1').checked = true;
+
     let count = 6;
     const width = 100;
     let timeoutClear;
@@ -16,6 +19,7 @@ export function slider() {
         carousel.style.transition = 'transform 0.5s linear';
         count++;
         carousel.style.transform = 'translateX(' + (-width * count) + '%)';
+        btnsCounter++;
     }
 
     //left button listener
@@ -27,6 +31,11 @@ export function slider() {
         carousel.style.transition = 'transform 0.5s linear';
         count--;
         carousel.style.transform = 'translateX(' + (-width * count) + '%)';
+        if (btnsCounter == 1) {
+            btnsCounter = 5;
+        } else {
+            btnsCounter--;
+        }
     });
 
     //right button listeer
@@ -38,6 +47,11 @@ export function slider() {
         carousel.style.transition = 'transform 0.5s linear';
         count++;
         carousel.style.transform = 'translateX(' + (-width * count) + '%)';
+        if (btnsCounter == 5) {
+            btnsCounter = 1;
+        } else {
+            btnsCounter++;
+        }
     });
 
     carousel.addEventListener('transitionend', () => {
@@ -45,11 +59,14 @@ export function slider() {
             carousel.style.transition = 'none';
             count = 6;
             carousel.style.transform = 'translateX(' + (-width * count) + '%)';
+            btnsCounter = 5;
         } else if (imgs[count].id === "last") {
             carousel.style.transition = 'none';
             count = 6;
             carousel.style.transform = 'translateX(' + (-width * count) + '%)';
+            btnsCounter = 1;
         }
+        document.querySelector('#radio' + btnsCounter).checked = true;
     });
 
     //interval sliding images

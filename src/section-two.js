@@ -5,7 +5,6 @@ export function sectionTwo() {
 
     window.addEventListener('scroll', () => {
         const scrolled = window.scrollY;
-        console.log(scrolled)
         if (scrolled > 200) {
             h1.classList.add('section-two__h1--active');
             p1.style.opacity = '1';

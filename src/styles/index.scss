@@ -1,6 +1,3 @@
-//abstracts
-// @use "abstracts/variables";
-
 //layout
 @use "layout/general";
 @use "layout/header";
@@ -13,4 +10,5 @@
 @use "layout/section-seven";
 @use "layout/footer";
 
+//abstracts
 @use "abstracts/responsive";

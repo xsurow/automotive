@@ -4,11 +4,79 @@
     width: 100%;
     overflow: hidden;
 
+    input {
+        display: none;
+    }
+
+    &__labels {
+        position: absolute;
+        bottom: 2rem;
+        z-index: 3;
+        display: flex;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    &__label {
+        border: 1px solid white;
+        border-radius: 50%;
+        padding: 0.6vw;
+        z-index: 3;
+        cursor: pointer;
+        
+        &:not(:last-child) {
+            margin-right: 1vw;
+        }
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    &__labelChecked {
+        position: absolute;
+        bottom: 2rem;
+        display: flex;
+        left: 50%;
+        z-index: 2;
+        transform: translateX(-50%);
+
+        & > div {
+            border: 1px solid rgba(255, 255, 255, 0);
+            padding: 0.6vw;
+            border-radius: 50%;
+
+            &:not(:last-child) {
+                margin-right: 1vw;
+            }
+        }
+    }
+
+    #radio1:checked ~ .section-three__labelChecked > .section-three__labelChecked--bg1 {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    #radio2:checked ~ .section-three__labelChecked > .section-three__labelChecked--bg2 {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    #radio3:checked ~ .section-three__labelChecked > .section-three__labelChecked--bg3 {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    #radio4:checked ~ .section-three__labelChecked > .section-three__labelChecked--bg4 {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    #radio5:checked ~ .section-three__labelChecked > .section-three__labelChecked--bg5 {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
     &__container {
         position: relative;
         margin: auto;
         width: calc(100% / 3);
-        
+
         img {
             width: 100%;
         }
