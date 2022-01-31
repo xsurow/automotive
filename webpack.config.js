@@ -41,7 +41,7 @@ module.exports = {
         new MiniCssExtractPlugin(),
         new HtmlWebpackPlugin({
             template: "./src/index.html",
-        })
+        }),
     ],
 
     devtool: "source-map",
