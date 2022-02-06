@@ -1,5 +1,17 @@
 @use './variables';
 
+@media screen and (max-width: 1090px) {
+    .section-four {
+        &__text1 {
+    
+            h1 {
+                font-size: 1.4rem;
+            } 
+
+        }
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .section-two {
         &__h1 {
@@ -18,13 +30,13 @@
     .section-four {
         &__text1 {
             h1 {
-                font-size: calc(1rem + 0.5vw);
+                font-size: calc(0.7rem + 0.8vw);
             }
         }
 
         &__text2 {
             h1 {
-                font-size: calc(1rem + 0.5vw);
+                font-size: calc(0.7rem + 0.8vw);
             }
         }
     }
@@ -184,7 +196,7 @@
 
         &__text1 {
             h1 {
-                font-size: calc(0.6rem + 1vw);
+                font-size: calc(0.4rem + 1.2vw);
             }
 
             p {
@@ -194,7 +206,7 @@
 
         &__text2 {
             h1 {
-                font-size: calc(0.6rem + 1vw);
+                font-size: calc(0.4rem + 1.2vw);
             }
 
             p {
