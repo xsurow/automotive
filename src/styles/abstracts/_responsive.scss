@@ -216,8 +216,16 @@
     }
 
     .section-five {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            margin: 10vh auto 0;
+        }
+
         &__sentence {
-            font-size: calc(1rem + 0.5vw); 
+            font-size: calc(1rem + 0.5vw);
+            margin: auto;
         }
 
         &__text1 {
@@ -424,6 +432,77 @@
 
         .fa-facebook-square, .fa-youtube, .fa-instagram, .fa-github {
             margin: 1vw;
+        }
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .section-two {
+        &__h1 {
+            font-size: 6vw;
+
+            &--active {
+                transform: translateX(103vw);
+            }
+    
+            &--moving{
+                transform: translateX(105vw);
+            }
+        }
+
+        &__p1 {
+            font-size: calc(0.4rem + 2vw);
+            left: 7vw;
+        }
+
+        &__area {
+            &--active{
+                transform: translateX(-55vw);
+            }
+        }
+
+        &__h2 {
+            font-size: 5vw;
+        }
+
+        &__p2 {
+            font-size: calc(0.4rem + 2vw);
+        }
+    }
+
+    .section-four {
+        h2 {
+            font-size: calc(1rem + 6vw);
+        }
+    }
+
+    .section-five {
+        h2 {
+            font-size: calc(1rem + 6vw);
+        }
+    }
+
+    .section-six {
+        h2 {
+            font-size: 10vw;
+        }
+    }
+
+    .section-seven {
+        &__area {
+            h1 {
+                font-size: 10vw;
+            }
+    
+            p {
+                font-size: 5vw;
+            }
+        }
+    }
+
+    .socials {
+        .fa-facebook-square, .fa-youtube, .fa-instagram, .fa-github {
+            font-size: 8vw;
         }
     }
 }
